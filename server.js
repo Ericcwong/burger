@@ -1,7 +1,7 @@
 //Dependencies
 const express = require("express");
 const exphbs = require("express-handlebars");
-const connection = require("./assets/js/connection");
+const connection = require("./assets/js/connection.js");
 
 //Calling express function as app
 //setting PORT to whatever heroku calls if not 9000 localhost:
@@ -23,4 +23,4 @@ app.set("view engine", "handlebars");
 //Starts the server
 app.listen(PORT, function(){
     console.log("Server listening on: http://localhost: " + PORT);
-})
+});
