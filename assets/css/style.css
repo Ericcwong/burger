@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: lightyellow;
+}
+#burgerImage{
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    margin: auto;
+    width: 50%;
+}
+.container h2{
+    text-align: center;
+}
+.container form{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.container form .submitButton{
+    padding: 1rem;
+    
+}
