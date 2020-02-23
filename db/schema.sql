@@ -4,7 +4,12 @@ CREATE DATABASE burgers_db;
 USE burgers_db;
 
 CREATE TABLE burgers(
-	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	burger_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     burger_name VARCHAR (30) NOT NULL,
     devoured BOOLEAN 
+);
+CREATE TABLE eatenBurger(
+	eaten_burger_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    eaten_burger_name VARCHAR(30) NOT NULL,
+    devoured BOOLEAN
 );
