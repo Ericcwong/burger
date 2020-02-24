@@ -1,9 +1,7 @@
 //Connection.js creates the connection to the MySQL database
 
-
 //dependencies
 const mysql = require("mysql");
-
 
 //creates a connection to the mysql database
 const connection = mysql.createConnection({
