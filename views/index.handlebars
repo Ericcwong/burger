@@ -3,7 +3,13 @@
     </div>
         <div class="leftContainer">
         <ul>
-            {{#each}}
+            {{#each burgers}}
+            <li>
+                <p>ID: {{burger_id}}</p>
+                <p>Ordered Burger: {{burger_name}}</p>
+                <button data-burger_id="{{this.burger_id}}" class="devourBurger">Devour IT!</button>
+            </li>
+            {{/each}}
         </ul>
     </div>
     <div class="container">
@@ -15,4 +21,14 @@
             <button class="submitButton" type="submit">Order it!</button>
         </form>
         <h4>Enter a burger you want to eat!</h4>
+    </div>
+    <div class="rightContainer">
+        <ul>
+            {{#each eaten_burgers}}
+            <li>
+                <p>ID: {{eaten_burger_id}}</p>
+                <p>Devoured Burger: {{eaten_burger_name}}</p>
+            </li>
+            {{/each}}
+        </ul>
     </div>
