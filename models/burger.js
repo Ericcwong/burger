@@ -6,11 +6,17 @@ let burger = {
             cb(res);
         });
     },
-    insertOne: function(cols, vals, cb){
+    addBurger: function(cols, vals, cb){
         orm.create("burgers",cols,vals, function(res){
             cb(res);
         });
+    },
+    eatenBurger: function(objColValue, condition, cb){
+        orm.updateOne("burgers", objColValue, condition, function(res){
+            cb(res);
+        });
     }
+
 }
 
 
