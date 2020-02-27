@@ -5,22 +5,23 @@
         <div class="leftContainer">
             <ul>
                 {{#each burgers}}
+                
                 <li>
                     <p>ID: {{burger_id}}</p>
                     <p>Ordered Burger: {{burger_name}}</p>
-                    <button data-burger_id="{{burger_id}}" class="devourBurger" >
+                    <p>Devoured?: {{devoured}}</p>
+                    <button data-burger_id="{{burger_id}}" data-eatBurger="{{devour}}" class="devourBurger" >
                         Devour IT!</button>
                 </li>
+                
                 {{/each}}
             </ul>
         </div>
         <div class="rightContainer">
             <ul>
                 {{#each burgers}}
-                <li>
-                    <p>ID: {{burger_id}}</p>
-                    <p>Devoured Burger: {{burger_name}}</p>
-                </li>
+                    {{#if devour}}
+                    {{/if}}
                 {{/each}}
             </ul>
         </div>

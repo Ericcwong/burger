@@ -2,14 +2,14 @@ $(function(){
     $(".devourBurger").on("click",function(){
         let burger_id = $(this).data("burger_id");
         console.log(burger_id);
-        let eatenBurger = $(this).data("eatenBurger");
-        let eatenBurgerState = {
-            burger: eatenBurger
+        let eatBurger = $(this).data("eatBurger");
+        let eatBurgerState = {
+            devour: eatBurger
         };
 
         $.ajax("/api/burger/" + burger_id, {
             type: "PUT",
-            data: eatenBurgerState
+            data: eatBurgerState
         }).then(function(){
             console.log(eatenBurger + " has been eaten!")
             location.reload();
