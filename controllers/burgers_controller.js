@@ -4,14 +4,25 @@ const burger = require("../models/burger");
 
 router.get("/",function(req,res){
     burger.selectAll(function(data){
+        //setting burgers in index.handlebars to display data.
         let hbsObject = {
             burgers: data
         };
-        console.log(hbsObject);
+        // console.log(hbsObject);
         res.render("index",hbsObject);
     });
 });
-router.put("/api/burgers/:id", function(req, res){
+
+router.post("/api/burger",function(req, res){
+    console.log(req.body)
+
+    burger.addBurger(["burger_name"],[req.body.burger_name],function(results){
+        res.json({ id: results.insertId });
+    });
+});
+
+
+router.put("/api/burger/:id", function(req, res){
     let condition = "id = " + req.params.id;
     console.log("condition", condition);
     burger.eatenBurger(

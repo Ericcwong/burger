@@ -6,13 +6,13 @@ let burger = {
             cb(res);
         });
     },
-    addBurger: function(cols, vals, cb){
-        orm.create("burgers",cols,vals, function(res){
-            cb(res);
+    addBurger: function(cols, vals, cb) {
+        orm.addBurger("burgers", cols, vals, function(res) {
+          cb(res);
         });
-    },
-    eatenBurger: function(objColValue, condition, cb){
-        orm.updateOne("burgers", objColValue, condition, function(res){
+      },
+    eatenBurger: function(objColValues, condition, cb){
+        orm.updateOne("burgers", objColValues, condition, function(res){
             cb(res);
         });
     }

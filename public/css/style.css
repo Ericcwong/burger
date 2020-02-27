@@ -43,3 +43,7 @@ body{
 .container h4{
     text-align: center;
 }
+
+.leftContainer{
+    background-color: lightsalmon;
+}
