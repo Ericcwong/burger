@@ -11,8 +11,8 @@ let burger = {
           cb(res);
         });
       },
-    eatenBurger: function(objColValues, condition, cb){
-        orm.updateOne("burgers", objColValues, condition, function(res){
+    eatBurger: function(objColValues, condition, cb){
+        orm.eatBurger("burgers", objColValues, condition, function(res){
             cb(res);
         });
     }

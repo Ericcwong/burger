@@ -52,13 +52,13 @@ let orm = {
       cb(result);
     });
   },
-   updateOne: function(table, objColValues, condition, cb){
-       let updateQuery = "UPDATE ?? "
+   eatBurger: function(table, objColValues, condition, cb){
+       let updateQuery = "UPDATE " + table + " SET " + objectToSql(objColValues) + " WHERE " + condition
        console.log(updateQuery);
        connection.query(updateQuery,function(err,res){
            if(err) throw err;
            console.log(res);
-            cb(res)
+            cb(res);
        });
    }
 };
