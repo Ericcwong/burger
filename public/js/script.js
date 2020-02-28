@@ -2,16 +2,17 @@ $(function(){
     $(".devourBurger").on("click",function(){
         let burger_id = $(this).data("burger_id");
         console.log(burger_id);
-        let eatBurger = $(this).data("eatBurger");
+        let devoured = $(this).data("devoured");
+        console.log(devoured)
         let eatBurgerState = {
-            devour: eatBurger
+            devoured: true
         };
-
+        console.log(eatBurgerState)
         $.ajax("/api/burger/" + burger_id, {
             type: "PUT",
             data: eatBurgerState
         }).then(function(){
-            console.log(eatenBurger + " has been eaten!")
+            console.log(devoured + " has been eaten!")
             location.reload();
         });
     });
