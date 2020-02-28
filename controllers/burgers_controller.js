@@ -10,6 +10,7 @@ router.get("/",function(req,res){
         };
         // console.log(hbsObject);
         res.render("index",hbsObject);
+        res.json(path.join(__dirname, "views/layouts/main.handlebars"));
     });
 });
 
