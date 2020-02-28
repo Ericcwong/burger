@@ -34,7 +34,7 @@ these software are <strong>only</strong> needed if you choose to run it on your 
 # Learning experience and difficulties
 This would have to be one of the most difficult homework to date. What made it difficult was to work with so many files and different routes. That made it confusing on what is supposed to do what. 
 
-What made it easier for me was to physically map out
+What made it easier for me was to physically map out<br>
 <img src = "readMe/images/mapping.jpg" width="300px"><br>
 Once mapping it out and slowly dissect what the previous activity's flow. I slowly put the two together and made a functioning burger application.
 
