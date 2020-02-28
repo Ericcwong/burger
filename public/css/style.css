@@ -15,11 +15,26 @@ body{
     margin-right: auto;
 }
 
-.container{
+.burgerContainer{
     margin: auto;
-    width: 50%;
+    width: 60%;
+    display: flex;
 }
-.container h2{
+.order {
+    flex: 0 0 65%;
+}
+    
+.devoured {
+    flex: 1;
+}
+.burgerContainer .devourBurger{
+    padding: 1rem;
+    background-color: salmon;
+    
+}
+
+.container {
+    clear: both;
     text-align: center;
 }
 .container form{
@@ -31,19 +46,15 @@ body{
     padding: 1rem;
 }
 /* Come back to this when the devour button is live */
-/* .container form .submitButton:hover{
+/* .burgerContainer .devourBurger:hover{
     color: white;
     padding-top: 2.3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     background-repeat: no-repeat;
-    background-image: url("/assets/images/devourImage.jpg");
+    background-image: url("/public/images/devourImage.jpg");
     background-size: 93px 52px;
 } */
 .container h4{
     text-align: center;
-}
-
-.leftContainer{
-    background-color: lightsalmon;
 }

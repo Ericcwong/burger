@@ -1,38 +1,37 @@
-    <div class="header">
-        <img id="burgerImage" src="/images/burger.png" alt="Cartoon burger">
+<div class="header">
+    <img id="burgerImage" src="/images/burger.png" alt="Cartoon burger">
+</div>
+<div class="burgerContainer">
+    <div class="order">
+        <h1>Ordered:</h1>
+        {{#each burgers}}
+        {{#unless devoured}}
+            <p>ID: {{burger_id}}</p>
+            <p>Ordered Burger: {{burger_name}}</p>
+            <p>Devoured?: {{devoured}}</p>
+            <button data-burger_id="{{burger_id}}" data-eatBurger="{{devoured}}" class="devourBurger" >Devour IT!</button>
+        {{/unless}}
+        {{/each}}
     </div>
-    <div class="container">
-        <div class="leftContainer">
-            <ul>
-                {{#each burgers}}
-                
-                <li>
-                    <p>ID: {{burger_id}}</p>
-                    <p>Ordered Burger: {{burger_name}}</p>
-                    <p>Devoured?: {{devoured}}</p>
-                    <button data-burger_id="{{burger_id}}" data-eatBurger="{{devoured}}" class="devourBurger" >
-                        Devour IT!</button>
-                </li>
-                
-                {{/each}}
-            </ul>
-        </div>
-        <div class="rightContainer">
-            <ul>
-                {{#each burgers}}
-                    {{#if devour}}
-                    {{/if}}
-                {{/each}}
-            </ul>
-        </div>
+    <div class="devoured">
+        <h1>Devoured:</h1>
+        {{#each burgers}}
+            {{#if devoured}}
+            <p>ID: {{burger_id}}</p>
+            <p>Ordered Burger: {{burger_name}}</p>
+            <p>Devoured?: {{devoured}}</p>
+        {{/if}}
+        {{/each}}
     </div>
-    <div class="container">
-        <h2>Burger Devourer!</h2>
+</div>
 
-        <form class="addBurger">
-            <textarea id="burger" name="name" cols="50" rows="10" type="text"></textarea><br>
+<div class="container">
+    <h2>Burger Devourer!</h2>
 
-            <button class="submitButton" type="submit">Order it!</button>
-        </form>
-        <h4>Enter a burger you want to eat!</h4>
-    </div>
+    <form class="addBurger">
+        <textarea id="burger" name="name" cols="50" rows="10" type="text"></textarea><br>
+
+        <button class="submitButton" type="submit">Order it!</button>
+    </form>
+    <h4>Enter a burger you want to eat!</h4>
+</div>
