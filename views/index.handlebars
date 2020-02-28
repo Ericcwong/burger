@@ -2,24 +2,26 @@
     <img id="burgerImage" src="/images/burger.png" alt="Cartoon burger">
 </div>
 <div class="burgerContainer">
-    <div class="order">
+    <div class="totalOrder">
         <h1>Ordered:</h1>
         {{#each burgers}}
         {{#unless devoured}}
-            <p>ID: {{burger_id}}</p>
-            <p>Ordered Burger: {{burger_name}}</p>
-            <p>Devoured?: {{devoured}}</p>
+            <div class="order">
+            <p>Order Number: {{burger_id}}</p>
+            <p>Ordered Burger: <strong>{{burger_name}}</strong></p>
             <button data-burger_id="{{burger_id}}" data-eatBurger="{{devoured}}" class="devourBurger" >Devour IT!</button>
+            </div>
         {{/unless}}
         {{/each}}
     </div>
-    <div class="devoured">
+    <div class="totalDevoured">
         <h1>Devoured:</h1>
         {{#each burgers}}
             {{#if devoured}}
-            <p>ID: {{burger_id}}</p>
-            <p>Ordered Burger: {{burger_name}}</p>
-            <p>Devoured?: {{devoured}}</p>
+            <div class="devoured">
+            <p>Order Number: {{burger_id}}</p>
+            <p>Ordered Burger: <strong>{{burger_name}}</p></strong>
+            </div>
         {{/if}}
         {{/each}}
     </div>

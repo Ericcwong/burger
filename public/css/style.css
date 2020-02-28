@@ -19,18 +19,40 @@ body{
     margin: auto;
     width: 60%;
     display: flex;
+    border: 4px solid lightgray;
 }
-.order {
-    flex: 0 0 65%;
+.totalOrder {
+    flex: 0 0 50%;
+    background-color: salmon;
+    margin-right: 5px;
+    padding-left: 10px;
 }
-    
-.devoured {
+.order{
+    width: 90%;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.totalDevoured {
     flex: 1;
+    background-color: slategray;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+.devoured{
+    width: 90%;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.order .devoured p{
+    font-size: large;
 }
 .burgerContainer .devourBurger{
-    padding: 1rem;
-    background-color: salmon;
-    
+    padding: .5rem;
+    background-color: lightblue;
+
 }
 
 .container {
