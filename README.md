@@ -1,6 +1,6 @@
 # Burger
 
-<a href = "?"><img src = "readMe/images/herokuLogo.png"><strong>Heroku</strong></a> Deployed application. (Currently not working)<br>
+<a href = "?"><img src = "readMe/images/herokuLogo.png"><strong>Heroku</strong></a> Deployed application.<br>
 <a href = "https://github.com/Ericcwong/burger"><img src ="readMe/images/githubLogo.png"><strong>GitHub</strong></a> Repository
 
 <img src="readMe/images/burger.gif" alt="burger.gif">
