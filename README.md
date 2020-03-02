@@ -1,6 +1,6 @@
 # Burger
 
-<a href = "?"><img src = "readMe/images/herokuLogo.png"><strong>Heroku</strong></a> Deployed application.<br>
+<a href = "https://ericcwong-burger.herokuapp.com/"><img src = "readMe/images/herokuLogo.png"><strong>Heroku</strong></a> Deployed application.<br>
 <a href = "https://github.com/Ericcwong/burger"><img src ="readMe/images/githubLogo.png"><strong>GitHub</strong></a> Repository
 
 <img src="readMe/images/burger.gif" alt="burger.gif">
@@ -9,7 +9,7 @@ Burger is an application that users can use to store what burger they ordered in
 # Getting Started
 To get started, you can use this application through two different ways.
 
-<a href="?">Deployed link</a>, this being the easiest is going through Heroku. Going through Heroku means the application will be all ready for use!
+<a href="https://ericcwong-burger.herokuapp.com/">Deployed link</a>, this being the easiest is going through Heroku. Going through Heroku means the application will be all ready for use!
 
 The other is going through the<a href = "https://github.com/Ericcwong/burger"> Git Hub</a> page. You would have to download the files, head to server.js. Once inside server.js run in terminal and type in (node server.js). The local server will start and in your browser's search bar, type localhost:8000. The application will be hosted through localhost.
 
